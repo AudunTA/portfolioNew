@@ -1,0 +1,20 @@
+.wrapper-cards {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  grid-template-rows: minmax(100px, auto);
+}
+.wrapper-cards > div {
+  background-color: #eee;
+}
+.wrapper-cards > div:nth-child(odd) {
+  background-color: #ddd;
+}
+.padding-card {
+  margin: 10px;
+}
+.img-card {
+  width: 100%;
+}
