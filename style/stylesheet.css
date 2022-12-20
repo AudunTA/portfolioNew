@@ -1,3 +1,24 @@
+:root {
+  --green: #4eba93;
+  --dark: #1d1e1f;
+}
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "League Spartan";
+  font-size: 22px;
+}
 .wrapper-cards {
   width: 90%;
   margin: auto;
@@ -7,14 +28,36 @@
   grid-template-rows: minmax(100px, auto);
 }
 .wrapper-cards > div {
-  background-color: #eee;
+  background-color: var(--dark);
 }
-.wrapper-cards > div:nth-child(odd) {
-  background-color: #ddd;
+.wrapper-cards > div h2 {
+  color: var(--green);
 }
+.wrapper-cards > div p {
+  color: #ffffff;
+}
+
 .padding-card {
   margin: 10px;
 }
 .img-card {
   width: 100%;
+}
+#btn-seeMore {
+  padding: 15px;
+  border-radius: 19px;
+  background-color: var(--dark);
+  color: white;
+  border-color: var(--green);
+}
+@media (max-width: 1250px) {
+  .wrapper-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .wrapper-cards {
+    grid-template-columns: 1fr;
+  }
 }
