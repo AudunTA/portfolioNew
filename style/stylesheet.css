@@ -1,6 +1,7 @@
 :root {
   --green: #4eba93;
   --dark: #1d1e1f;
+  --white: #ffffff;
 }
 body {
   background: #0f2027; /* fallback for old browsers */
@@ -44,11 +45,20 @@ body {
   width: 100%;
 }
 #btn-seeMore {
-  padding: 15px;
+  cursor: pointer;
+  padding: 5px 40px;
+
   border-radius: 19px;
   background-color: var(--dark);
   color: white;
   border-color: var(--green);
+  font-family: "League Spartan";
+  font-size: 22px;
+}
+#btn-seeMore:hover {
+  transition: 250ms;
+  background-color: var(--green);
+  border-color: var(--white);
 }
 @media (max-width: 1250px) {
   .wrapper-cards {
