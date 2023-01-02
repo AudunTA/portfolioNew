@@ -2,34 +2,28 @@
   --green: #4eba93;
   --dark: #1d1e1f;
   --white: #ffffff;
+  --almostwhite: #dce4e5;
 }
 body {
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: var(--white);
   font-family: "League Spartan";
   font-size: 22px;
 }
+.topnav a {
+  text-decoration: none;
+}
 .wrapper-cards {
-  width: 90%;
-  margin: auto;
+  max-width: 1200px;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
   grid-template-rows: minmax(100px, auto);
 }
 .wrapper-cards > div {
-  background-color: var(--dark);
+  background-color: #1d1e1f;
+  backdrop-filter: blur(1rem);
+  border-radius: 19px;
 }
 .wrapper-cards > div h2 {
   color: var(--green);
@@ -37,29 +31,64 @@ body {
 .wrapper-cards > div p {
   color: #ffffff;
 }
-
+.card {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
 .padding-card {
   margin: 10px;
 }
 .img-card {
+  border-radius: 19px;
   width: 100%;
 }
 #btn-seeMore {
-  cursor: pointer;
-  padding: 5px 40px;
-
-  border-radius: 19px;
-  background-color: var(--dark);
   color: white;
-  border-color: var(--green);
-  font-family: "League Spartan";
-  font-size: 22px;
+  border-radius: 19px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px 33px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  margin: auto;
+  margin: 5px;
 }
-#btn-seeMore:hover {
-  transition: 250ms;
-  background-color: var(--green);
-  border-color: var(--white);
+.top-section {
+  text-align: center;
 }
+h1,
+h2 {
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+p {
+  color: rgb(112, 111, 111);
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 1250px) {
   .wrapper-cards {
     grid-template-columns: 1fr 1fr;
@@ -70,4 +99,38 @@ body {
   .wrapper-cards {
     grid-template-columns: 1fr;
   }
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.nav-option {
+  padding: 15px;
+}
+.active-nav {
+  color: white;
+  border-radius: 19px;
+
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px 33px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+#img-logo {
+  width: 250px;
 }
