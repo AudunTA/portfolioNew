@@ -21,7 +21,7 @@ body {
   grid-template-rows: minmax(100px, auto);
 }
 .wrapper-cards > div {
-  background-color: #1d1e1f;
+  background-color: #383f46;
   backdrop-filter: blur(1rem);
   border-radius: 19px;
 }
@@ -32,40 +32,45 @@ body {
   color: #ffffff;
 }
 .card {
-  box-shadow: 0 0 20px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 20px #5638aa;
 }
-.padding-card {
+.top {
   margin: 10px;
 }
+
 .img-card {
   border-radius: 19px;
   width: 100%;
 }
-#btn-seeMore {
+a {
+  text-decoration: none;
+}
+#project-seeMore {
   color: white;
-  border-radius: 19px;
   border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  display: block;
+  margin: 10px;
+
+  padding: 10px 33px;
+  cursor: pointer;
   background-image: linear-gradient(
     to right,
     #4776e6 0%,
     #8e54e9 51%,
     #4776e6 100%
   );
-  font-weight: bold;
-  margin: 10px;
-  padding: 10px 33px;
-  text-align: center;
-  transition: 0.5s;
   background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
-  width: 100%;
-  margin: auto;
-  margin: 5px;
 }
 .top-section {
   text-align: center;
 }
+
 h1,
 h2 {
   background-image: linear-gradient(
@@ -78,6 +83,14 @@ h2 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+h2 {
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 51%,
+    #02aab0 100%
+  );
 }
 p {
   color: rgb(112, 111, 111);
@@ -113,14 +126,15 @@ p {
 .active-nav {
   color: white;
   border-radius: 19px;
-
+  justify-content: center;
+  vertical-align: auto;
   background-image: linear-gradient(
     to right,
     #4776e6 0%,
     #8e54e9 51%,
     #4776e6 100%
   );
-  font-weight: bold;
+
   margin: 10px;
   padding: 10px 33px;
   text-align: center;
@@ -133,4 +147,29 @@ p {
 
 #img-logo {
   width: 250px;
+}
+
+/* about */
+.main-content {
+}
+.container-about {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#img-about {
+  width: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 66%;
+}
+#about-text {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+.contact-about {
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
