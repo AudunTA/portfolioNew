@@ -1,7 +1,7 @@
 export const data = [
   {
     title: "AuctionHouse",
-    description: `AuctionHouse is my semesterproject for the 3rd semester at Noroff. this project is built with Bootstrap framework and JavaScript`,
+    description: `AuctionHouse is my semesterproject for the 3rd semester at Noroff. this project is built with Bootstrap, JavaScript and SASS`,
     imgsrc: "/images/auctionHouse.png",
   },
   {
@@ -14,5 +14,10 @@ export const data = [
     title: "Adventure trail hike",
     description: `As a project for my first semester at Noroff, I created Adventure Trails Hike, a fully functional website built with HTML and CSS.`,
     imgsrc: "/images/adventureTrails.png",
+  },
+  {
+    title: "PlantSpire",
+    description: `This was my semester 2 project at Noroff. This showcased alot of the newly learned javascript and it was graded a B.`,
+    imgsrc: "/images/plantSpire.png",
   },
 ];

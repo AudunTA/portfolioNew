@@ -121,6 +121,7 @@ p {
   margin: 20px auto;
 }
 .nav-option {
+  color: black;
   padding: 15px;
 }
 .active-nav {
@@ -172,4 +173,17 @@ p {
   margin: auto;
   display: flex;
   justify-content: center;
+}
+.contact-icons {
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  #img-logo {
+    width: 125px;
+  }
+  .nav-option {
+    font-size: 12px;
+  }
 }
