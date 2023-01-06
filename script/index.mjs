@@ -15,7 +15,7 @@ for (let i = 0; i < data.length; i++) {
     </p>
   </div>
 
-  <a href="spesific.html?site=${data[i].title}"
+  <a href="${data[i].gitlink}"
   ><button id="project-seeMore">See More</button></a
 >
 </div>`;
