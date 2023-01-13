@@ -1,5 +1,11 @@
 export const data = [
   {
+    title: "Comming soon",
+    description: `this is the current project im working on, comming soon`,
+    imgsrc: "/images/AH-new.png",
+    gitlink: "",
+  },
+  {
     title: "AuctionHouse",
     description: `AuctionHouse is my semesterproject for the 3rd semester at Noroff. this project is built with Bootstrap, JavaScript and SASS`,
     imgsrc: "/images/auctionHouse.png",
