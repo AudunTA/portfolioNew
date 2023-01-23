@@ -101,7 +101,10 @@ p {
   color: #fff;
   text-decoration: none;
 }
-
+.live-link {
+  color: white;
+  text-decoration: underline;
+}
 @media (max-width: 1250px) {
   .wrapper-cards {
     grid-template-columns: 1fr 1fr;
